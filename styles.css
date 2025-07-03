@@ -22,7 +22,6 @@
     --light-green-transparent: rgba(132, 204, 22, 0.1);
 }
 
-/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -46,7 +45,6 @@ body {
     padding: 0 20px;
 }
 
-/* Navigation */
 .navbar {
     position: fixed;
     top: 0;
@@ -155,7 +153,6 @@ body {
     background-color: var(--light-green);
 }
 
-/* Hero Section */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -312,7 +309,6 @@ body {
     }
 }
 
-/* Section Styles */
 .section-title {
     font-size: 2.5rem;
     font-weight: 700;
@@ -334,7 +330,6 @@ body {
     border-radius: 2px;
 }
 
-/* About Section */
 .about {
     padding: 100px 0;
     background: linear-gradient(135deg, var(--gray-50) 0%, var(--white) 100%);
@@ -388,7 +383,6 @@ body {
     font-weight: 500;
 }
 
-/* Skills Section */
 .skills {
     padding: 100px 0;
     background: linear-gradient(135deg, var(--navy) 0%, var(--burgundy) 100%);
@@ -455,7 +449,6 @@ body {
     box-shadow: 0 5px 15px rgba(132, 204, 22, 0.4);
 }
 
-/* Projects Section */
 .projects {
     padding: 100px 0;
     background: linear-gradient(135deg, var(--gray-50) 0%, var(--white) 100%);
@@ -569,7 +562,6 @@ body {
     border: 1px solid var(--light-green);
 }
 
-/* Contact Section */
 .contact {
     padding: 100px 0;
     background: linear-gradient(135deg, var(--navy) 0%, var(--burgundy) 100%);
@@ -724,7 +716,6 @@ body {
     background: var(--light-green-hover);
 }
 
-/* Footer */
 .footer {
     background: var(--gray-900);
     color: var(--white);
@@ -747,7 +738,6 @@ body {
     color: var(--white);
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .nav-menu {
         position: fixed;
@@ -891,7 +881,6 @@ body {
     }
 }
 
-/* Smooth scrolling animations */
 @media (prefers-reduced-motion: no-preference) {
     .hero-content > * {
         opacity: 0;
@@ -922,7 +911,6 @@ body {
         }
     }
 
-    /* Scroll reveal animations */
     .stat,
     .skill-category,
     .project-card {
@@ -939,7 +927,6 @@ body {
     }
 }
 
-/* Loading animations */
 .loading {
     opacity: 0;
     animation: fadeIn 0.5s ease forwards;
@@ -951,7 +938,6 @@ body {
     }
 }
 
-/* Utility classes */
 .text-navy { color: var(--navy); }
 .text-light-green { color: var(--light-green); }
 .text-burgundy { color: var(--burgundy); }
@@ -959,7 +945,6 @@ body {
 .bg-light-green { background-color: var(--light-green); }
 .bg-burgundy { background-color: var(--burgundy); }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
     width: 8px;
 }
