@@ -94,7 +94,7 @@ body {
 
 .nav-menu {
     display: flex;
-    gap: 2.5rem;
+    gap: 1.5rem; /* Reduced from 2.5rem to bring links closer */
     align-items: center;
 }
 
@@ -260,6 +260,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.profile-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 .image-placeholder {
@@ -433,20 +440,16 @@ body {
     justify-content: center;
 }
 
+/* UPDATED: Skills have different shape and NO hover effects */
 .skill-item {
     background: linear-gradient(135deg, var(--light-green), var(--light-green-hover));
     color: var(--navy);
     padding: 8px 16px;
-    border-radius: 25px;
+    border-radius: 8px; /* Changed from 25px to 8px for rectangular shape */
     font-size: 0.9rem;
     font-weight: 600;
-    transition: all 0.3s ease;
     box-shadow: 0 3px 10px rgba(132, 204, 22, 0.3);
-}
-
-.skill-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(132, 204, 22, 0.4);
+    /* Removed transition and hover effects */
 }
 
 .projects {
@@ -961,3 +964,4 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(135deg, var(--light-green), var(--burgundy));
 }
+    
