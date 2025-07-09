@@ -11,19 +11,20 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar" id="navbar">
+    <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
                 <a href="#home">
                     <img src="img/neils_logo.png" alt="Neil MacLeod brand logo">
                 </a>
             </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
             <div class="nav-toggle" id="nav-toggle">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -31,31 +32,35 @@
             </div>
         </div>
     </nav>
-<section id="home" class="hero">
-    <div class="hero-container">
-        <div class="hero-content">
-            <h1 class="hero-title">
-                Hi, I'm <span class="highlight">Neil MacLeod</span>
-            </h1>
-            <p class="hero-subtitle">Web Developer & 3D Design Specialist</p>
-            <p class="hero-description">
-                Combining 11+ years of technical leadership with modern web development skills.
-                I create responsive, user-focused websites that solve real-world problems.
-            </p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Neil MacLeod</span>
+                </h1>
+                <p class="hero-subtitle">Web Developer & 3D Design Specialist</p>
+                <p class="hero-description">
+                    Combining 11+ years of technical leadership with modern web development skills.
+                    I create responsive, user-focused websites that solve real-world problems.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
             </div>
-        </div>
-        <div class="hero-image">
-            <img src="img/storm" alt="Neil MacLeod - Profile Picture">
-        </div>
+          <div class="hero-image">
+    <div class="image-placeholder">
+        <i class="fas fa-user-circle"></i>
+        <p><img src="img/storm.png" alt= "picture of my cat namee storm"></p>
     </div>
-    <div class="scroll-indicator">
-        <div class="scroll-arrow"></div>
-    </div>
-</section>
-    
+</div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
     <section id="about" class="about">
         <div class="container">
             <h2 class="section-title">About Me</h2>
@@ -63,34 +68,34 @@
                 <div class="about-text">
                     <p>
                         I'm a passionate Web Design student at NAIT with a unique background that sets me apart.
-                        My journey from 3D automotive modeling to construction project management has given me
-                        a strong foundation in technical problem-solving and attention to detail.
+                         My journey from 3D automotive modeling to construction project management has given me
+                         a strong foundation in technical problem-solving and attention to detail.
                     </p>
                     <p>
                         Currently pursuing my DMIT degree (expected 2026), I bring real-world experience in
-                        managing complex projects, coordinating teams, and translating technical specifications
-                        into functional solutions. My experience with CATIA, Maya, and hands-on project leadership
-                        translates perfectly to creating clean, efficient code and user-centered web experiences.
+                         managing complex projects, coordinating teams, and translating technical specifications
+                         into functional solutions. My experience with CATIA, Maya, and hands-on project leadership
+                         translates perfectly to creating clean, efficient code and user-centered web experiences.
                     </p>
-                </div>
-                <div class="about-stats">
-                    <div class="stat">
-                        <h3>11+</h3>
-                        <p>Years Leadership Experience</p>
-                    </div>
-                    <div class="stat">
-                        <h3>2026</h3>
-                        <p>DMIT Graduate</p>
-                    </div>
-                    <div class="stat">
-                        <h3>3D + Web</h3>
-                        <p>Design Expertise</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>11+</h3>
+                            <p>Years Leadership Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>2026</h3>
+                            <p>DMIT Graduate</p>
+                        </div>
+                        <div class="stat">
+                            <h3>3D + Web</h3>
+                            <p>Design Expertise</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+        
     <section id="skills" class="skills">
         <div class="container">
             <h2 class="section-title">Skills & Technologies</h2>
@@ -133,81 +138,101 @@
     </section>
 
     <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-plus project-placeholder"></i>
-                        <div class="project-overlay">
-                            <a href="#" class="project-link" title="Coming Soon">
-                                <i class="fas fa-clock"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Projects Coming Soon</h3>
-                        <p>I'm currently working on exciting projects that showcase my skills in web development and design. Check back soon to see my latest work!</p>
-                        <div class="project-tech">
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>JavaScript</span>
-                        </div>
+    <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card featured-project">
+                <div class="project-header">
+                    <h3>3D Temple Modeling - Augustus Temple Recreation</h3>
+                    <div class="project-tech">
+                        <span>Autodesk Maya</span>
+                        <span>3D Modeling</span>
+                        <span>Architectural Design</span>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+                
+                <div class="project-description">
+                    <p>Here is an assignment I had for my 3D modeling class. The instructions were to create a temple based on a real life structure. I chose to make my design off of the Temple of Augustus in Pula, Croatia. Here are some of the steps I went through just starting with a cube and using Maya to create this finished product.</p>
+                </div>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's work together!</h3>
-                    <p>I'm always interested in new opportunities and exciting projects. Whether you need a responsive website, have a complex technical challenge, or just want to discuss how my unique background can benefit your team, I'd love to hear from you!</p>
-                    <div class="contact-methods">
-                        <div class="contact-method">
-                            <i class="fas fa-envelope"></i>
-                            <span>Neil.Johnathon@gmail.com</span>
-                        </div>
-                        <div class="contact-method">
-                            <i class="fas fa-phone"></i>
-                            <span>403-671-6595</span>
-                        </div>
-                        <div class="contact-method">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Edmonton, Alberta</span>
-                        </div>
+                <div class="project-gallery">
+                    <div class="gallery-item">
+                        <img src="img/1stimg.jpg" alt="Initial cube structure - Step 1">
+                        <div class="gallery-caption">Step 1: Starting with basic cube structure</div>
                     </div>
-                    <div class="social-links">
-                        <a href="#" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-link" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    
+                    <div class="gallery-item">
+                        <img src="img/2img.jpg" alt="Basic temple structure - Step 2">
+                        <div class="gallery-caption">Step 2: Developing the temple foundation</div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="img/castle_3rdimg.jpg" alt="Detailed temple structure - Step 3">
+                        <div class="gallery-caption">Step 3: Adding architectural details</div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="img/finalimage.jpg" alt="Completed Temple of Augustus recreation">
+                        <div class="gallery-caption">Final Result: Temple of Augustus Recreation</div>
                     </div>
                 </div>
-                <form class="contact-form" id="contact-form">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+
+                <div class="project-footer">
+                    <p><strong>Inspiration:</strong> Temple of Augustus, Pula, Croatia</p>
+                    <p><strong>Software:</strong> Autodesk Maya</p>
+                    <p><strong>Techniques:</strong> Polygonal modeling, architectural recreation, texture application</p>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+   <section id="contact" class="contact">
+    <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Let's work together!</h3>
+                <p>I'm always interested in new opportunities and exciting projects. Whether you need a responsive website, have a complex technical challenge, or just want to discuss how my unique background can benefit your team, I'd love to hear from you!</p>
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <i class="fas fa-envelope"></i>
+                        <span>Neil.Johnathon@gmail.com</span>
+                    </div>
+                    <div class="contact-method">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Edmonton, Alberta</span>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject *</label>
+                    <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" placeholder="Tell me about your project or inquiry..." rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
 
     <footer class="footer">
         <div class="container">
