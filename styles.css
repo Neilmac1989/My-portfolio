@@ -45,6 +45,7 @@ body {
     padding: 0 20px;
 }
 
+/* Navbar - Fixed and cleaned up */
 .navbar {
     position: fixed;
     top: 0;
@@ -67,14 +68,28 @@ body {
     height: 80px;
 }
 
+/* 3D Spinning Logo Effect */
+.nav-logo {
+    perspective: 1000px;
+}
+
 .nav-logo img {
     height: 50px;
     width: auto;
+    transition: all 0.6s ease;
+    transform-style: preserve-3d;
+    cursor: pointer;
 }
 
+.nav-logo:hover img {
+    transform: rotateY(360deg) rotateX(15deg) scale(1.1);
+    filter: drop-shadow(0 10px 20px rgba(132, 204, 22, 0.3));
+}
+
+/* Navigation Menu */
 .nav-menu {
     display: flex;
-    list-style: none; /* Remove bullet points */
+    list-style: none;
     margin: 0;
     padding: 0;
     gap: 2rem;
@@ -82,7 +97,7 @@ body {
 }
 
 .nav-menu li {
-    list-style: none; /* Extra safety to remove bullets */
+    list-style: none;
 }
 
 .nav-link {
@@ -122,6 +137,8 @@ body {
     flex-direction: column;
     cursor: pointer;
     padding: 0.5rem;
+    background: none;
+    border: none;
 }
 
 .nav-toggle .bar {
@@ -131,6 +148,19 @@ body {
     margin: 3px 0;
     transition: 0.3s;
     border-radius: 2px;
+}
+
+/* Hamburger animation */
+.nav-toggle.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.nav-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-toggle.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
 }
 
 /* Mobile Styles */
@@ -165,6 +195,10 @@ body {
     .nav-link {
         font-size: 1.2rem;
     }
+
+    .nav-logo img {
+        height: 40px;
+    }
 }
 
 /* Navbar scroll effect */
@@ -173,6 +207,7 @@ body {
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* Logo animations */
 @keyframes subtleRotate {
     from { transform: rotateY(0deg); }
     to { transform: rotateY(360deg); }
@@ -184,24 +219,6 @@ body {
     100% { transform: rotateY(360deg) scale(1.1); }
 }
 
-.nav-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.bar {
-    width: 25px;
-    height: 3px;
-    background-color: var(--white);
-    margin: 3px 0;
-    transition: all 0.3s ease;
-    border-radius: 2px;
-}
-
-.nav-toggle:hover .bar {
-    background-color: var(--light-green);
-}
 
 .hero {
     min-height: 100vh;
