@@ -519,7 +519,6 @@ body {
     left: 0;
 }
 
-/* Projects Section - Enhanced for 3D Portfolio */
 .projects {
     padding: 100px 0;
     background: var(--white);
@@ -593,16 +592,10 @@ body {
     padding: 0 2rem 1.5rem;
 }
 
-.project-description p {
-    color: var(--gray-700);
-    line-height: 1.6;
-    font-size: 1rem;
-}
-
 .project-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
     padding: 0 2rem;
     margin-bottom: 2rem;
 }
@@ -613,6 +606,7 @@ body {
     overflow: hidden;
     background: var(--gray-100);
     aspect-ratio: 4/3;
+    min-height: 250px;
 }
 
 .gallery-item img {
@@ -622,6 +616,62 @@ body {
     transition: all 0.3s ease;
     cursor: pointer;
 }
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    color: var(--white);
+    padding: 1.5rem 0.8rem 0.8rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+    transform: translateY(100%);
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover .gallery-caption {
+    transform: translateY(0);
+}
+
+.project-gallery.large-images {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.project-gallery.large-images .gallery-item {
+    min-height: 300px;
+}
+
+@media (max-width: 768px) {
+    .project-gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 0 1.5rem;
+    }
+    
+    .gallery-item {
+        min-height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-gallery {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .gallery-item {
+        min-height: 250px;
+    }
+}
+
 
 .gallery-item:hover img {
     transform: scale(1.05);
