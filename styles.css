@@ -365,6 +365,7 @@ body {
     font-weight: 500;
 }
 
+/* Skills Section - Updated to look like lists instead of buttons */
 .skills {
     padding: 100px 0;
     background: linear-gradient(135deg, var(--gray-50) 0%, var(--white) 100%);
@@ -385,7 +386,7 @@ body {
 }
 
 .skill-category {
-    text-align: center;
+    text-align: left;
     padding: 2rem;
     background: var(--white);
     border-radius: 15px;
@@ -405,36 +406,51 @@ body {
     font-weight: 600;
     margin-bottom: 1.5rem;
     color: var(--navy);
+    text-align: center;
+    border-bottom: 2px solid var(--light-green);
+    padding-bottom: 0.5rem;
 }
 
 .skill-items {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 0.8rem;
-    justify-content: center;
 }
 
 .skill-item {
-    background: linear-gradient(135deg, var(--burgundy), #a0002a);
-    color: var(--white);
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    font-weight: 600;
+    color: var(--gray-700);
+    font-size: 1rem;
+    font-weight: 500;
     transition: all 0.3s ease;
-    box-shadow: 0 3px 10px rgba(153, 27, 27, 0.4);
-    border: 1px solid rgba(255, 107, 157, 0.3);
+    padding: 8px 0;
+    border-left: 3px solid transparent;
+    padding-left: 1rem;
     position: relative;
 }
 
 .skill-item::before {
     content: "•";
-    color: var(--light-green);
-    font-size: 1.2rem;
-    margin-right: 8px;
+    color: var(--burgundy);
+    font-size: 1.5rem;
+    margin-right: 12px;
     font-weight: bold;
     transition: all 0.3s ease;
+    position: absolute;
+    left: 0;
 }
+
+.skill-item:hover {
+    color: var(--navy);
+    border-left-color: var(--light-green);
+    padding-left: 1.2rem;
+    transform: translateX(5px);
+}
+
+.skill-item:hover::before {
+    color: var(--light-green);
+    transform: scale(1.2);
+}
+
 
 .skill-item:hover {
     transform: scale(1.05);
