@@ -365,7 +365,6 @@ body {
     font-weight: 500;
 }
 
-/* Skills Section - Updated to look like lists instead of buttons */
 .skills {
     padding: 100px 0;
     background: linear-gradient(135deg, var(--gray-50) 0%, var(--white) 100%);
@@ -390,15 +389,8 @@ body {
     padding: 2rem;
     background: var(--white);
     border-radius: 15px;
-    transition: all 0.3s ease;
     box-shadow: 0 5px 15px rgba(30, 58, 138, 0.1);
-    border: 2px solid transparent;
-}
-
-.skill-category:hover {
-    transform: translateY(-5px);
-    border-color: var(--light-green);
-    box-shadow: 0 15px 30px rgba(132, 204, 22, 0.2);
+    border: 2px solid var(--gray-200);
 }
 
 .skill-category h3 {
@@ -421,47 +413,20 @@ body {
     color: var(--gray-700);
     font-size: 1rem;
     font-weight: 500;
-    transition: all 0.3s ease;
     padding: 8px 0;
-    border-left: 3px solid transparent;
-    padding-left: 1rem;
+    padding-left: 1.5rem;
     position: relative;
+    cursor: default;
 }
 
 .skill-item::before {
     content: "•";
     color: var(--burgundy);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-right: 12px;
     font-weight: bold;
-    transition: all 0.3s ease;
     position: absolute;
     left: 0;
-}
-
-.skill-item:hover {
-    color: var(--navy);
-    border-left-color: var(--light-green);
-    padding-left: 1.2rem;
-    transform: translateX(5px);
-}
-
-.skill-item:hover::before {
-    color: var(--light-green);
-    transform: scale(1.2);
-}
-
-
-.skill-item:hover {
-    transform: scale(1.05);
-    background: linear-gradient(135deg, #a0002a, #c0003a);
-    box-shadow: 0 5px 15px rgba(153, 27, 27, 0.6);
-    border-color: rgba(255, 107, 157, 0.5);
-}
-
-.skill-item:hover::before {
-    color: var(--white);
-    transform: scale(1.2);
 }
 
 .projects {
